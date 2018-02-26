@@ -66,6 +66,14 @@ var characters = {
 			"Normal": "jnormal.png",
 			"Mad": "jmad.png",
 		}
+	},
+	"l":{ 
+		"Name": "Linda",
+		"Color": "#33333",
+		"Images": {
+			"Normal": "lnormal.png"
+		}
+
 	}
 			
 		

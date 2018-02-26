@@ -165,16 +165,22 @@
 	</section>
 
 	<!-- Main Screen -->
-	<section data-menu="main" data-background="img/ui/ourjourney.png">
-		<h1>Our Journey</h1>
+	<section data-menu="main" id="page">
+
+		<div class="logo" data-background="img/ui/stars.gif">
+		<img src ="img/ui/ourjourney.png" style="width:50%; height:25%;"/>
+		<span class="vertical align-right animated bounceIn" id="top" >
+				<button data-action="start" data-string="Start">Start</button>
+				<button data-action="open-menu" data-open="load" data-string="Load">Load</button>
+				<button data-action="open-menu" data-open="settings" data-string="Settings">Settings</button>
+				<button data-action="open-menu" data-open="help" data-string="Help">Help</button>
+				</span>
+		
+			
+		</div>
 		<audio type="audio/mpeg" data-component="ambient"></audio>
 
-		<div class="vertical align-right bottom animated bounceIn" data-ui="inner-menu">
-			<button data-action="start" data-string="Start">Start</button>
-			<button data-action="open-menu" data-open="load" data-string="Load">Load</button>
-			<button data-action="open-menu" data-open="settings" data-string="Settings">Settings</button>
-			<button data-action="open-menu" data-open="help" data-string="Help">Help</button>
-		</div>
+		
 	</section>
 
 	<!-- Save Screen -->
