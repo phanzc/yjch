@@ -51,6 +51,7 @@ var images = {
 var scenes = {
 	"Main": "ourjourney.png",
 	"Home": "housebg.jpg",
+	"Fronthouse": "fronthousebg.jpg",
 	"Mountain": "mountainbg.jpg",
 	"Forest": "forestbg.jpg",
 	
@@ -65,15 +66,27 @@ var characters = {
 		"Images":{
 			"Normal": "jnormal.png",
 			"Mad": "jmad.png",
+			"Sad": "jsad.png",
 		}
 	},
 	"l":{ 
 		"Name": "Linda",
 		"Color": "#33333",
 		"Images": {
-			"Normal": "lnormal.png"
+			"Normal": "lnormal.png",
+			"Mad": "lmad.png",
+			"Serious": "lserious.png",
+
 		}
 
+	},
+	"a":{
+		"Name": "Ariel",
+		"Color": "",
+		"Images": {
+			"Normal": "anormal.png",
+			"Mad": "amad.png",
+		}
 	}
 			
 		
@@ -101,7 +114,7 @@ var script = {
 		"scene Home",
 		"show j Normal right with fadeIn",
 
-		"Hi {{player.Name}} Welcome to Our Journey!",
+		"Hi {{player.Name}}, Welcome to Our Journey! Keep clicking left or press the spacebar to continue",
 		"This story is based on real immigrant's life",
 		"Are you ready to start the journey?",
 
@@ -122,9 +135,41 @@ var script = {
 	"Yes": [
 
 		"j That's awesome!",
-		"j Then you are ready to go ahead and create an amazing Game!",
-		"j I can't wait to see what story you'll tell!",
-		"end"
+		"j Then you are ready to go ahead !",
+		"j I can't wait to tell you my story",
+		"scene Fronthouse",
+		"show a Normal right fadeIn",
+		"a Wake up, we need to go if we going to get there at a good time!!",
+		
+		"Ok!, Ok!, I am awake ready to go.",
+		"1 hours and 30 minutes later",
+
+		"scene Mountain",
+		"show a Normal right fadeIn",
+		"a Be silent, approach as silently as possible.",
+		"show j Normal left fadeIn",
+		"j I got one in my scope.",
+
+		"a Take a breath and focus the scope then shoot.",
+
+		{"Choice":{
+			"Dialog": "What are you going to do? ",
+			"Shoot": {
+				"Text": "Shoot right away!!",
+				"Do": "jump Shoot"
+			},
+			"Wait": {
+				"Text": "Wait to have clear shoot",
+				"Do": "jump Shoot"
+			},
+
+
+
+		}
+	},
+
+
+		
 	],
 
 	"No": [
@@ -137,5 +182,5 @@ var script = {
 		"j I can't wait to see what story you'll tell!",
 		"end"
 	]
-}
 
+}
