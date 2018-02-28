@@ -4,16 +4,25 @@
  * ===========================
 **/
 
+
 @import url(//fonts.googleapis.com/css?family=Lato);
 
 body{
-	background: #F7F6F6;
+	background: black;
 	font-family: 'Lato', sans-serif;
 }
 
 h1, h2{
-	border-bottom: 1px solid #979797;
-	color: #979797;
+	color: white;
+}
+#top {
+	display: inline-block;
+	position: absolute;
+	margin-top: 0;
+}
+#page{
+	height: 100vh;
+
 }
 
 [data-ui='quick-menu'] span{
@@ -21,18 +30,17 @@ h1, h2{
 }
 
 [data-ui="inner-menu"]{
-	border-top: 1px solid #979797;
 	margin-bottom: 2vh;
 }
 
 button{
 	outline: none;
-	background: #00acc1;
+	background: gray;
 	color: white;
 }
 
 button:hover{
-	background: #00bcd4;
+	background: rgb(103, 131, 255);
 }
 
 [data-ui="slots"] figure{
