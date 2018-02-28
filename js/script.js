@@ -11,7 +11,7 @@ var messages = {
 var notifications = {
 	"Welcome": {
 		title: "Welcome",
-		body: "This is the Monogatari VN Engine",
+		body: "This is an interactive story",
 		icon: ""
 	}
 }
@@ -151,6 +151,49 @@ var script = {
 		"j I got one in my scope.",
 
 		"a Take a breath and focus the scope then shoot.",
+		"a See, I told you to have a clear shoot, Listen to me next time!! ",
+		"j I will do that next time, what do we do next?",
+		"a We got to go to a different location because if they was any deer near, now they are long gone.",
+		"j Ok, let go then I am getting hungry",
+		"2 hours later",
+		"a Let go home, it doesn’t look we will any, you scare them away.",
+
+		//Thoughts:  (“I felt really bad for ruining our chances at getting the deer, because of my impatience.”)
+
+		"j OK",
+
+	//	"1 hour later",
+		"scene Home",
+		// grandma dissapointed 
+		"l You didn’t get anything, I had a feeling this might happen so I prepare you some food.",
+		//j and a 
+		"Aaah beans again, You know what I so hungry and tire that this are delicious, but deer would have been great.",
+		
+		//If shoot right away
+		"scene Mountain",
+		"j Yes!! It looks like I got it",
+		"a Nice, we are going to eat great tonight.",
+		"j Let go get it.",
+		"a Be careful don’t get to close!!",
+
+		// choice "be careful dont get too close", "get a closer look"
+		"j It ok, it dead already",
+		"j Aaah, aah, aah.",
+		"a I told you not get close, when deer are dying there at their strongest.",
+		"a You know we can’t afford for any of us to get injured the closest clinic is 2 hours away And doctors is never there.",
+		"j And the doctor it not there we would to drive to the city which takes about 3 hours. I know I am sorry. Live and Learn.",
+		"a Alright, Let go you have be with pain, so you can learn from your mistakes it will heal with time.",
+		"At home.",
+		"What happened to you?",
+		"j I got kick the deer, but though ARIEL told not get close I still did.",
+		"l This why listen to your cousin he has more experience. We pour alcohol and disinfectant and you will be fine. Any great hunt -- get to cook that deer. We will have food for days to come.",
+		"",
+
+
+
+
+
+
 
 		{"Choice":{
 			"Dialog": "What are you going to do? ",
@@ -161,16 +204,14 @@ var script = {
 			"Wait": {
 				"Text": "Wait to have clear shoot",
 				"Do": "jump Shoot"
-			},
-
-
-
+			}
 		}
-	},
+	}
+	
+	
 
+], 
 
-		
-	],
 
 	"No": [
 
