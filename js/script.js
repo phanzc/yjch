@@ -193,7 +193,7 @@ var script = {
 		"show j Normal right fadeIn",
 		"show a Normal left fadeIn",
 		"play voice Voice2",
-		"I reach EL Cerro Trozado at 7:00 AM and I started looking for deer and animals I could hunt for food",
+		"I reach EL Cerro Trozado at 7:00 AM and I started looking for deer and animals I could hunt for food.",
 		"scene Forest",
 		"show j Normal right fadeIn",
 		"play voice Voice3",
@@ -213,6 +213,10 @@ var script = {
 		"show l Normal left fadeIn",
 		"play voice Voice6",
 		"When I got home my grandmother was very happy because of the deer I had gotten.",
+
+		"scene Blackscreen",
+		"To be continued... ",
+
 
 
 
@@ -273,18 +277,18 @@ var script = {
 
 
 
-		{"Choice":{
-			"Dialog": "What are you going to do? ",
-			"Shoot": {
-				"Text": "Shoot right away!!",
-				"Do": "jump Shoot"
-			},
-			"Wait": {
-				"Text": "Wait to have clear shoot",
-				"Do": "jump Shoot"
-			}
-		}
-	}
+//		{"Choice":{
+//			"Dialog": "What are you going to do? ",
+//			"Shoot": {
+//				"Text": "Shoot right away!!",
+//				"Do": "jump Shoot"
+//			},
+//			"Wait": {
+//				"Text": "Wait to have clear shoot",
+//				"Do": "jump Shoot"
+//			}
+//		}
+//	}
 	
 	
 
