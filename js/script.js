@@ -5,47 +5,50 @@ var messages = {
 		"Subtitle": "Some useful Links",
 		"Message": "<p><a href='http://monogatari.hyuchia.com/documentation/'>Documentation</a> - Everything you need to know.</p><p><a href='http://monogatari.hyuchia.com/demo/'>Demo</a> - A simple Demo.</p>"
 	}
-}
+};
 
 // Define the notifications used in the game
-var notifications = {
-	"Welcome": {
-		title: "Welcome",
-		body: "This is an interactive story",
-		icon: ""
-	}
-}
+//var notifications = {
+//	"Welcome": {
+//		title: "Welcome",
+//		body: "This is an interactive story",
+//		icon: ""
+//	}
+//};
 
 // Define the Particles JS Configurations used in the game
-var particles = {
-
-}
+let particles = {
+		"universe": {"particles":{"number":{"value":0,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true}
+	
+};
 
 // Define the music used in the game.
 var music = {
 
-}
+
+};
 
 // Define the voice files used in the game.
 var voice = {
+	"Story": "story.wav"
 
-}
+};
 
 // Define the sounds used in the game.
 var sound = {
 
-}
+};
 
 // Define the videos used in the game.
 var videos = {
 
-}
+};
 
 // Define the images used in the game.
 var images = {
 
 
-}
+};
 
 // Define the backgrounds for each scene.
 var scenes = {
@@ -54,9 +57,14 @@ var scenes = {
 	"Fronthouse": "fronthousebg.jpg",
 	"Mountain": "mountainbg.jpg",
 	"Forest": "forestbg.jpg",
+	"Beach": "beach.png", 
+	"Bed": "bed.png",
+	"Housefar": "housefar.png",
+	
+
 	
 	
-}
+};
 
 // Define the Characters
 var characters = {
@@ -90,7 +98,7 @@ var characters = {
 	}
 			
 		
-	}
+	};
 
 
 
@@ -116,10 +124,9 @@ var script = {
 
 		"Hi {{player.Name}}, Welcome to Our Journey! Keep clicking left or press the spacebar to continue",
 		"This story is based on real immigrant's life",
-		"Are you ready to start the journey?",
-
+		
 		{"Choice": {
-				"Dialog": "j Have you already read some documentation?",
+				"Dialog": "Are you ready to start the journey?",
 				"Yes": {
 					"Text": "Yes",
 					"Do": "jump Yes"
@@ -138,7 +145,8 @@ var script = {
 		"j Then you are ready to go ahead !",
 		"j I can't wait to tell you my story",
 		"scene Fronthouse",
-		"show a Normal right fadeIn",
+		"show l Normal right fadeIn",
+		"play voice Story",
 		"a Wake up, we need to go if we going to get there at a good time!!",
 		
 		"Ok!, Ok!, I am awake ready to go.",
@@ -187,9 +195,17 @@ var script = {
 		"What happened to you?",
 		"j I got kick the deer, but though ARIEL told not get close I still did.",
 		"l This why listen to your cousin he has more experience. We pour alcohol and disinfectant and you will be fine. Any great hunt -- get to cook that deer. We will have food for days to come.",
-		"",
+		"j Ok, I wait make sure it dead.",
+		"l Alright, help me carry it home.",
+		"Great jobs, we got us food for days. Let get started on the preparation, I send some food to your other cousin too. ",
 
+		//new scene
+		"After finish eating a great meal, all seats down to admire the fresh humit wind blowing and nice shade as the sun goes down.",
+		"l You know I went to see you Grandma Lucinda and she told your parent called They told her they will soon have enough money to bring you to the United States.",
+		"j doesn’t usually show any emotion, but at this moment he began which show How much he cares for his grandmother.",
+		"You I am very happy that I finally be able to see them soon, but at the same time I feel very sad because I will leave you behind grandma. Once I leave I won’t be able to see you ever again grandma. (Tears behind to fall.) ",
 
+		
 
 
 
