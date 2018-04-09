@@ -1,0 +1,62 @@
+var script = {
+
+"messages": {
+  "Help": {
+    "Title": "Help",
+    "Subtitle": "Some useful Links",
+    "Message": "<p><a href='http://monogatari.hyuchia.com/documentation/'>Documentation</a> - Everything you need to know.</p><p><a href='http://monogatari.hyuchia.com/demo/'>Demo</a> - A simple Demo.</p>"
+  }
+},
+
+"particles": {
+  "universe": {"particles":{"number":{"value":0,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#330B29"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true}
+
+},
+
+"music": {},
+
+"voice": {
+  "Story": "story.wav",
+	"Voice1": "STE-000.mp3",
+	"Voice2": "STE-001.mp3",
+	"Voice3": "STE-002.mp3",
+	"Voice4": "STE-003.mp3",
+	"Voice5": "STE-004.mp3",
+	"Voice6": "STE-005.mp3",
+	"Voice7": "STE-006.mp3",
+	"Voice8": "STE-007.mp3",
+	"Voice9": "STE-008.mp3",
+	"Voice10": "STE-009.mp3",
+	"Voice11": "STE-010.mp3",
+	"Voice12": "STE-011.mp3",
+	"Voice13": "STE-012.mp3",
+	"Voice14": "STE-013.mp3",
+	"Voice15": "STE-014.mp3",
+	"Voice16": "STE-015.mp3",
+	"Voice17": "STE-016.mp3",
+	"Voice18": "STE-017.mp3",
+	"Voice19": "STE-018.mp3",
+	"Voice20": "STE-019.mp3",
+	"Voice21": "STE-020.mp3",
+	"Voice22": "STE-021.mp3",
+	"Voice23": "STE-022.mp3",
+	"Voice24": "STE-023.mp3",
+	"Voice25": "STE-025.mp3",
+	"Voice26": "STE-026.mp3",
+	"Voice27": "STE-028.mp3",
+	"Voice28": "STE-030.mp3",
+	"Voice29": "STE-031.mp3",
+	"Voice30": "STE-032.mp3",
+	"Voice31": "STE-035.mp3",
+	"Voice32": "STE-036.mp3",
+	"Voice33": "STE-037.mp3",
+	"Voice34": "STE-038.mp3",
+	"Voice35": "STE-039.mp3",
+
+}
+
+
+
+
+
+}

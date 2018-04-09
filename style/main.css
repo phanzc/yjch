@@ -35,12 +35,12 @@ h1, h2{
 
 button{
 	outline: none;
-	background: gray;
+	background: rgba(239, 39, 0, 0.8);
 	color: white;
 }
 
 button:hover{
-	background: rgb(103, 131, 255);
+	background: rgb(245, 91, 3);
 }
 
 [data-ui="slots"] figure{

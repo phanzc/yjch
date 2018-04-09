@@ -341,7 +341,7 @@ textarea {
 [data-ui="choices"] button {
 	margin: 1em;
 	padding: 0.5em;
-	border-radius: 0.5em;
+	
 	width: auto;
 	height: auto;
 	color: rgb(255, 255, 255);
@@ -356,7 +356,7 @@ textarea {
 }
 
 [data-ui="text"] {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(51, 11, 41, 0.5);
 	min-height: 20vh;
 	max-height: 25vh;
 	overflow-y: scroll;

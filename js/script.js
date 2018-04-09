@@ -18,8 +18,8 @@ var messages = {
 
 // Define the Particles JS Configurations used in the game
 let particles = {
-		"universe": {"particles":{"number":{"value":0,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true}
-	
+		"universe": {"particles":{"number":{"value":0,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#330B29"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true}
+
 };
 
 // Define the music used in the game.
@@ -65,7 +65,7 @@ var voice = {
 	"Voice32": "STE-036.mp3",
 	"Voice33": "STE-037.mp3",
 	"Voice34": "STE-038.mp3",
-	"Voice35": "STE-039.mp3",  
+	"Voice35": "STE-039.mp3",
 
 };
 
@@ -92,7 +92,7 @@ var scenes = {
 	"Fronthouse": "fronthousebg.jpg",
 	"Mountain": "mountainbg.jpg",
 	"Forest": "forestbg.jpg",
-	"Beach": "beach.png", 
+	"Beach": "beach.png",
 	"Bed": "bed.png",
 	"Housefar": "housefar.png",
 	"Blackscreen": "blackscreen.jpg",
@@ -100,8 +100,8 @@ var scenes = {
 
 
 
-	
-	
+
+
 };
 
 // Define the Characters
@@ -115,7 +115,7 @@ var characters = {
 			"Sad": "jsad.png",
 		}
 	},
-	"l":{ 
+	"l":{
 		"Name": "Linda",
 		"Color": "#33333",
 		"Images": {
@@ -134,8 +134,8 @@ var characters = {
 			"Mad": "amad.png",
 		}
 	}
-			
-		
+
+
 	};
 
 
@@ -145,23 +145,13 @@ var script = {
 
 		"Start":[
 			"notify Welcome",
-			{"Input": {
-				"Text": "What is your name?",
-				"Validation": function(input) {
-					return input.trim().length > 0;
-				},
-				"Save": function(input) {
-					storage.player.Name = input;
-				},
-				"Warning": "You must enter a name!"
-			}
-		},
+
 
 		"scene Blackscreen",
 
 		"Hi {{player.Name}}, Welcome to Our Journey! Press any key to continue",
 		"This story is based on real immigrant's life",
-		
+
 		{"Choice": {
 				"Dialog": "Are you ready to start the journey?",
 				"Yes": {
@@ -185,7 +175,7 @@ var script = {
 		"show j Normal right fadeIn",
 		"I was 11 years old and this morning I had woken up at 5:00 AM to travel to el Cerro Trozado which is a mountain about 7 miles from house in order to go hunt for food.",
 //		"a Wake up, we need to go if we going to get there at a good time!!",
-		
+
 //		"Ok!, Ok!, I am awake ready to go.",
 //		"1 hours and 30 minutes later",
 
@@ -198,26 +188,37 @@ var script = {
 		"show j Normal right fadeIn",
 		"play voice Voice3",
 		"I then saw a deer in the distance I approached as silently as possible from a distance of 100 meter, I adjusted my scope and made sure I wouldn’t miss.",
-		
-		"scene Forest",
-		"show j Normal right fadeIn",
-		"play voice Voice4",
-		"I then pull the trigger and down went the deer, at this moment I went to check if it was still alive, after that I secure the deer and carry it all the way home.",
-		
-		"scene Theway",
-		"play voice Voice5",
-		"It was heavier than I expected, I was happy because I was going to eat very well for a few days.",
-		
-		"scene Home",
-		"show j Normal right fadeIn",
-		"show l Normal left fadeIn",
-		"play voice Voice6",
-		"When I got home my grandmother was very happy because of the deer I had gotten.",
 
 		"scene Blackscreen",
-		"To be continued... ",
+		"Your Choice",
+		{"Choice": {
+				"Dialog": "What are you going to do?",
+				"Shoot": {
+					"Text": "Shoot right away",
+					"Do": "jump Shoot"
+				},
+				"Wait": {
+					"Text": "Wait to have clear shoot.",
+					"Do": "jump Wait"
+				}
+			}
+		}
+	],
 
+"Shoot": [
+	"scene Blackscreen",
+	"Mexico...",
+	"scene Bed",
+	"play voice Voice1",
+	"show j Normal right fadeIn",
+	"I was 11 years old and this morning I had woken up at 5:00 AM to travel to el Cerro Trozado which is a mountain about 7 miles from house in order to go hunt for food.",
 
+],
+"Wait": [
+ 	"scene Mountain",
+	"show j Normal right fadeIn",
+	"Yes!!,  It looks like I got it."
+],
 
 
 //		"a Be silent, approach as silently as possible.",
@@ -238,11 +239,11 @@ var script = {
 
 	//	"1 hour later",
 	//	"scene Home",
-		// grandma dissapointed 
+		// grandma dissapointed
 //		"l You didn’t get anything, I had a feeling this might happen so I prepare you some food.",
-		//j and a 
+		//j and a
 //		"Aaah beans again, You know what I so hungry and tire that this are delicious, but deer would have been great.",
-		
+
 		//If shoot right away
 //		"scene Mountain",
 //		"j Yes!! It looks like I got it",
@@ -271,7 +272,7 @@ var script = {
 //		"j doesn’t usually show any emotion, but at this moment he began which show How much he cares for his grandmother.",
 //		"You I am very happy that I finally be able to see them soon, but at the same time I feel very sad because I will leave you behind grandma. Once I leave I won’t be able to see you ever again grandma. (Tears behind to fall.) ",
 
-		
+
 
 
 
@@ -289,10 +290,10 @@ var script = {
 //			}
 //		}
 //	}
-	
-	
 
-], 
+
+
+//Important  ],
 
 
 	"No": [
